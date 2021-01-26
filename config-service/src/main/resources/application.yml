@@ -1,0 +1,16 @@
+server:
+  port: 8888
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          #searchLocations: /Users/yuzhiming/Desktop/workspaces/my-spring-cloud/config-service/src/main/resources/config/licensingservice
+          searchLocations: /Users/germing/Desktop/workspaces/my-spring-cloud/config-service/src/main/resources/config/licensingservice
+        #git:
+       #   uri: https://gitee.com/yuzhiming/spring-cloud-config/
+        #  searchPaths: config-repo/licensingservice,config-repo/organizationservice
+         # username: 786004470@qq.com
+          #password: 7592059yu

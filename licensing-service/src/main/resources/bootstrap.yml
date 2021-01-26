@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: licensingservice
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://localhost:8888
+
+server:
+  port: 8080
+
+eureka:
+  instance:
+    preferIpAddress: true #注册服务的IP，而不是服务的名称
+  client:
+    registerWithEureka: true #向Eureka注册服务
+    fetchRegistry: true #拉取注册表的本地副本 而不是每次查找服务都调用eureka服务，每隔30s同步一次
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
