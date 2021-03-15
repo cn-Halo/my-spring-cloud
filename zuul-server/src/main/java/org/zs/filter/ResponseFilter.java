@@ -2,6 +2,7 @@ package org.zs.filter;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
+import org.commmon.dto.UserContext;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletResponse;
@@ -37,6 +38,7 @@ public class ResponseFilter extends ZuulFilter {
         HttpServletResponse response = ctx.getResponse();
         response.addHeader(SERIAL_ID, UUID.randomUUID().toString());
 //        Thread
+
         return null;
     }
 }

@@ -37,7 +37,10 @@ public class TrackingFilter extends ZuulFilter {
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();
         if (request.getHeader(SERIAL_ID) == null) {
-            ctx.addZuulRequestHeader(SERIAL_ID, UUID.randomUUID().toString());
+            String uuid = UUID.randomUUID().toString();
+            System.out.println(uuid);
+            ctx.addZuulRequestHeader(SERIAL_ID, uuid);
+
         }
         return null;
     }

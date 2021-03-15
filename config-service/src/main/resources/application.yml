@@ -13,4 +13,4 @@ spring:
        #   uri: https://gitee.com/yuzhiming/spring-cloud-config/
         #  searchPaths: config-repo/licensingservice,config-repo/organizationservice
          # username: 786004470@qq.com
-          #password: 7592059yu
+          #password: *123*

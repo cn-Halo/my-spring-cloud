@@ -2,17 +2,22 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="zuul-server" />
-        <module name="licensing-service" />
-        <module name="organization-service" />
-        <module name="config-service" />
-        <module name="common" />
         <module name="eureka-server" />
+        <module name="common" />
+        <module name="licensing-service" />
+        <module name="zuul-server" />
+        <module name="config-service" />
+        <module name="organization-service" />
+        <module name="oauth2-server" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="base" target="1.6" />
+    </bytecodeTargetLevel>
   </component>
 </project>
